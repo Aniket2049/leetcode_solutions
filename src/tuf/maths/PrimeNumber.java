@@ -1,9 +1,5 @@
 package tuf.maths;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 // https://takeuforward.org/data-structure/print-all-divisors-of-a-given-number/
 public class PrimeNumber {
 	public static void checkIfPrime(int n) {
