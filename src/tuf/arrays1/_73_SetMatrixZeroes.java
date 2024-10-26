@@ -1,4 +1,4 @@
-package tuf.arrays;
+package tuf.arrays1;
 
 // https://leetcode.com/problems/set-matrix-zeroes/description/
 // https://www.youtube.com/watch?v=T41rL0L3Pnw

@@ -1,4 +1,4 @@
-package tuf.arrays;
+package tuf.arrays1;
 
 // https://leetcode.com/problems/next-permutation/description/
 // https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/

@@ -1,4 +1,4 @@
-package tuf.arrays;
+package tuf.arrays1;
 
 // https://leetcode.com/problems/sort-colors/description/
 // https://www.youtube.com/watch?v=tp8JIuCXBaU
