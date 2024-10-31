@@ -7,6 +7,21 @@ import java.util.Set;
 // https://www.youtube.com/watch?v=TjFXEUCMqI8
 public class _36_ValidSudoku {
 
+	public boolean isValidSudoku2(char[][] board) {
+	    Set seen = new HashSet();
+	    for (int i=0; i<9; ++i) {
+	        for (int j=0; j<9; ++j) {
+	            char number = board[i][j];
+	            if (number != '.')
+	                if (!seen.add(number + " in row " + i) ||
+	                    !seen.add(number + " in column " + j) ||
+	                    !seen.add(number + " in block " + i/3 + "-" + j/3))
+	                    return false;
+	        }
+	    }
+	    return true;
+	}
+	
 	public boolean isValidSudoku(char[][] board) {
 		// a set of the characters that we have already come across (excluding '.' which
 		// denotes an empty space)
@@ -102,7 +117,7 @@ public class _36_ValidSudoku {
 				,{'.','6','.','.','.','.','2','8','.'}
 				,{'.','.','.','4','1','9','.','.','5'}
 				,{'.','.','.','.','8','.','.','7','9'}}; 
-		System.out.println(new _36_ValidSudoku().isValidSudoku(board));
+		System.out.println(new _36_ValidSudoku().isValidSudoku2(board));
 
 		
 //		Example 2:
@@ -128,7 +143,7 @@ public class _36_ValidSudoku {
 				,{'.','6','.','.','.','.','2','8','.'}
 				,{'.','.','.','4','1','9','.','.','5'}
 				,{'.','.','.','.','8','.','.','7','9'}};
-		System.out.println(new _36_ValidSudoku().isValidSudoku(board));
+		System.out.println(new _36_ValidSudoku().isValidSudoku2(board));
 	}
 
 }
