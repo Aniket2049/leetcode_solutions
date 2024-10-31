@@ -5,6 +5,7 @@ import java.util.Set;
 
 // https://leetcode.com/problems/valid-sudoku/description/
 // https://www.youtube.com/watch?v=TjFXEUCMqI8
+// https://www.youtube.com/watch?v=Pl7mMcBm2b8
 public class _36_ValidSudoku {
 
 	public boolean isValidSudoku2(char[][] board) {
