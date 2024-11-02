@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 // https://leetcode.com/problems/valid-anagram/description/
-public class _242_ValidAnagram {
+public class _242_Valid_Anagram {
 
 	public boolean isAnagram(String s, String t) {
 		if (s.length() != t.length())
@@ -70,7 +70,7 @@ public class _242_ValidAnagram {
 	}
 
 	public static void main(String[] args) {
-		_242_ValidAnagram obj = new _242_ValidAnagram();
+		_242_Valid_Anagram obj = new _242_Valid_Anagram();
 
 		String s1 = "anagram", t1 = "nagaram";
 		String s2 = "sdfram", t2 = "nagaram";

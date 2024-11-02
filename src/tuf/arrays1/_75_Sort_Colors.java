@@ -3,7 +3,7 @@ package tuf.arrays1;
 // https://leetcode.com/problems/sort-colors/description/
 // https://www.youtube.com/watch?v=tp8JIuCXBaU
 // https://takeuforward.org/data-structure/sort-an-array-of-0s-1s-and-2s/
-public class _75_SortColors {
+public class _75_Sort_Colors {
 	public void sortColors(int[] nums) {
 		int low = 0, mid = 0, high = nums.length - 1; // 3 pointers
 
@@ -44,11 +44,11 @@ public class _75_SortColors {
 //		Example 1:
 //		Input: nums = [2,0,2,1,1,0]
 //		Output: [0,0,1,1,2,2]
-		new _75_SortColors().sortColors(new int[] {2,0,2,1,1,0});
+		new _75_Sort_Colors().sortColors(new int[] {2,0,2,1,1,0});
 //		Example 2:
 //		Input: nums = [2,0,1]
 //		Output: [0,1,2]
-		new _75_SortColors().sortColors(new int[] {2,0,1});
+		new _75_Sort_Colors().sortColors(new int[] {2,0,1});
 
 	}
 

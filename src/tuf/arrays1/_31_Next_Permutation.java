@@ -3,7 +3,7 @@ package tuf.arrays1;
 // https://leetcode.com/problems/next-permutation/description/
 // https://takeuforward.org/data-structure/next_permutation-find-next-lexicographically-greater-permutation/
 // https://www.youtube.com/watch?v=JDOXKqF60RQ&t=1s
-public class _31_NextPermutation {
+public class _31_Next_Permutation {
 
 	public static void printPermutation(int[] data) {
 		System.out.print("The next permutation is: [");
@@ -73,22 +73,22 @@ public class _31_NextPermutation {
 //		Input: nums = [2,1,5,4,3,0,0]
 //		Output: [2,3,0,0,1,4,5]
 		int[] input = new int[] { 2, 1, 5, 4, 3, 0, 0 };
-		new _31_NextPermutation().nextPermutation(input);
+		new _31_Next_Permutation().nextPermutation(input);
 //		Example 1:
 //		Input: nums = [1,2,3]
 //		Output: [1,3,2]
 		input = new int[] { 1, 2, 3 };
-		new _31_NextPermutation().nextPermutation(input);
+		new _31_Next_Permutation().nextPermutation(input);
 //		Example 2:
 //		Input: nums = [3,2,1]
 //		Output: [1,2,3]
 		input = new int[] { 3, 2, 1 };
-		new _31_NextPermutation().nextPermutation(input);
+		new _31_Next_Permutation().nextPermutation(input);
 //		Example 3:
 //		Input: nums = [1,1,5]
 //		Output: [1,5,1]
 		input = new int[] { 1, 1, 5 };
-		new _31_NextPermutation().nextPermutation(input);
+		new _31_Next_Permutation().nextPermutation(input);
 
 	}
 

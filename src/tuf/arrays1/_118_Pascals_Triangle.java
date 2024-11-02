@@ -6,7 +6,7 @@ import java.util.List;
 
 // https://leetcode.com/problems/pascals-triangle/description/
 // https://www.youtube.com/watch?v=nPVEaB3AjUM
-public class _118_PascalsTriangle {
+public class _118_Pascals_Triangle {
 
 	public static void print(List<List<Integer>> data) {
 		for (List<Integer> it : data) {
@@ -48,7 +48,7 @@ public class _118_PascalsTriangle {
 	}
 
 	public static void main(String[] args) {
-		_118_PascalsTriangle obj = new _118_PascalsTriangle();
+		_118_Pascals_Triangle obj = new _118_Pascals_Triangle();
 
 		print(obj.generate(5));
 	}

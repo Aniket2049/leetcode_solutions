@@ -2,7 +2,7 @@ package tuf.arrays1;
 
 // https://leetcode.com/problems/set-matrix-zeroes/description/
 // https://www.youtube.com/watch?v=T41rL0L3Pnw
-public class _73_SetMatrixZeroes {
+public class _73_Set_Matrix_Zeroes {
 
 	public void setZeroes(int[][] matrix) {
 		int rows = matrix.length;
@@ -70,7 +70,7 @@ public class _73_SetMatrixZeroes {
 		int[][] matrix = { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
 		// Output: [[1,0,1],[0,0,0],[1,0,1]]
 
-		_73_SetMatrixZeroes obj = new _73_SetMatrixZeroes();
+		_73_Set_Matrix_Zeroes obj = new _73_Set_Matrix_Zeroes();
 		obj.setZeroes(matrix);
 	}
 

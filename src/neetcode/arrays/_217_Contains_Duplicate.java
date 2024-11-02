@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 // https://leetcode.com/problems/contains-duplicate/description/
-public class _217_ContainsDuplicate {
+public class _217_Contains_Duplicate {
 
 	public boolean containsDuplicate(int[] nums) {
 		if (nums == null || nums.length < 1)
@@ -24,7 +24,7 @@ public class _217_ContainsDuplicate {
 
 	public static void main(String[] args) {
 		int[] nums = new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
-		_217_ContainsDuplicate obj = new _217_ContainsDuplicate();
+		_217_Contains_Duplicate obj = new _217_Contains_Duplicate();
 		System.out.println(obj.containsDuplicate(nums));
 	}
 

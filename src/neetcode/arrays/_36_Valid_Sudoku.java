@@ -6,7 +6,7 @@ import java.util.Set;
 // https://leetcode.com/problems/valid-sudoku/description/
 // https://www.youtube.com/watch?v=TjFXEUCMqI8
 // https://www.youtube.com/watch?v=Pl7mMcBm2b8
-public class _36_ValidSudoku {
+public class _36_Valid_Sudoku {
 
 	public boolean isValidSudoku2(char[][] board) {
 	    Set seen = new HashSet();
@@ -118,7 +118,7 @@ public class _36_ValidSudoku {
 				,{'.','6','.','.','.','.','2','8','.'}
 				,{'.','.','.','4','1','9','.','.','5'}
 				,{'.','.','.','.','8','.','.','7','9'}}; 
-		System.out.println(new _36_ValidSudoku().isValidSudoku2(board));
+		System.out.println(new _36_Valid_Sudoku().isValidSudoku2(board));
 
 		
 //		Example 2:
@@ -144,7 +144,7 @@ public class _36_ValidSudoku {
 				,{'.','6','.','.','.','.','2','8','.'}
 				,{'.','.','.','4','1','9','.','.','5'}
 				,{'.','.','.','.','8','.','.','7','9'}};
-		System.out.println(new _36_ValidSudoku().isValidSudoku2(board));
+		System.out.println(new _36_Valid_Sudoku().isValidSudoku2(board));
 	}
 
 }
