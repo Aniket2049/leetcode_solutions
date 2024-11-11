@@ -36,6 +36,12 @@ public class Repeat_and_Missing_Number_Array {
     }
     
 	public static void main(String[] args) {
+		
+//		Example:
+//		Input:[3 1 2 5 3] 
+//		Output:[3, 4] 
+//		A = 3, B = 4
+		
         int[] a = {3, 1, 2, 5, 4, 6, 7, 5};
         int[] ans = findMissingRepeatingNumbers(a);
         System.out.println("The repeating and missing numbers are: {"
