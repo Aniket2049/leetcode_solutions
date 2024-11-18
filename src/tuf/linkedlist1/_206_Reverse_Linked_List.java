@@ -17,6 +17,14 @@ public class _206_Reverse_Linked_List {
 		return prev;
 	}
 
+	public static void printList(ListNode head) {
+		while (head != null) {
+			System.out.print(head.val+" ");
+			head = head.next;
+		}
+		System.out.println();
+	}
+
 	public static void main(String[] args) {
 //		Example 1:
 //		Input: head = [1,2,3,4,5]
@@ -26,11 +34,12 @@ public class _206_Reverse_Linked_List {
 		ListNode node3 = new ListNode(3);
 		ListNode node4 = new ListNode(4);
 		ListNode node5 = new ListNode(5);
-		node1.next= node2;
-		node2.next= node3;
-		node3.next= node4;
-		node4.next= node5;
-		
+		node1.next = node2;
+		node2.next = node3;
+		node3.next = node4;
+		node4.next = node5;
+		printList(new _206_Reverse_Linked_List().reverseList(node1));
+
 //		Example 2:
 //		Input: head = [1,2]
 //		Output: [2,1]
