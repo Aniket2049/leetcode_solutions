@@ -3,7 +3,7 @@ package tuf.linkedlist1;
 public class ListNode {
 
 	int val;
-	ListNode next;
+	public ListNode next;
 
 	ListNode() {
 	}
