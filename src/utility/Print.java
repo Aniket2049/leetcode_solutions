@@ -30,4 +30,15 @@ public final class Print {
 			System.out.println();
 		}
 	}
+
+	public static void printIntListOfLists(List<List<Integer>> listOfList) {
+		for (int i = 0; i < listOfList.size(); i++) {
+			List<Integer> currentString = listOfList.get(i);
+
+			for (int j = 0; j < currentString.size(); j++) {
+				System.out.print(currentString.get(j) + " ");
+			}
+			System.out.println();
+		}
+	}
 }
