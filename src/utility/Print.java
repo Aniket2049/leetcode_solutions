@@ -19,6 +19,23 @@ public final class Print {
 		System.out.print("]");
 		System.out.println();
 	}
+	
+	public static void printChar2DArray(char[][] arr) {
+		System.out.print("[");
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print("[");
+			for (int j = 0; j < arr[i].length; j++) {
+				if (j == arr[i].length - 1) {
+					System.out.print(arr[i][j]);
+				} else {
+					System.out.print(arr[i][j] + ",");
+				}
+			}
+			System.out.print("]");
+		}
+		System.out.print("]");
+		System.out.println();
+	}
 
 	public static void printStringListOfLists(List<List<String>> listOfList) {
 		for (int i = 0; i < listOfList.size(); i++) {
