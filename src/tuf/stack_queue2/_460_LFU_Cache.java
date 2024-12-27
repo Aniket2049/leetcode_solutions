@@ -38,6 +38,17 @@ public class _460_LFU_Cache {
 //		lfu.get(4);      // return 4
 //		                 // cache=[4,3], cnt(4)=2, cnt(3)=3
 
+		LFUCache cache = new LFUCache(2);
+		cache.put(1, 1);
+		cache.put(2, 2);
+		cache.get(1);
+		cache.put(3, 3);
+		cache.get(2);
+		cache.get(3);
+		cache.put(4, 4);
+		cache.get(1);
+		cache.get(3);
+		cache.get(4);
 	}
 
 }
