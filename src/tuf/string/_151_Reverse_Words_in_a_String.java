@@ -1,5 +1,7 @@
 package tuf.string;
 
+// https://leetcode.com/problems/reverse-words-in-a-string/description/
+// https://www.youtube.com/watch?v=tX-ZcKTNwYk
 public class _151_Reverse_Words_in_a_String {
 
 	public String reverseWords(String s) {
