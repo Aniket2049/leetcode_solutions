@@ -2,6 +2,7 @@ package tuf.string2;
 
 // https://www.interviewbit.com/problems/minimum-characters-required-to-make-a-string-palindromic/
 // https://www.youtube.com/watch?v=zL0O6Q6kEAQ
+// https://www.youtube.com/watch?v=pE4D55Yti7o
 public class Minimum_Characters_required_to_make_a_String_Palindromic {
 
 	public int solve(String A) {
