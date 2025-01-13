@@ -2,6 +2,7 @@ package tuf.linkedlistarrays;
 
 // https://leetcode.com/problems/trapping-rain-water/description/
 // https://www.youtube.com/watch?v=1_5VuquLbXg
+// https://www.youtube.com/watch?v=LBmzlYs5ygs
 public class _42_Trapping_Rain_Water {
 
 	public int trap(int[] height) {
