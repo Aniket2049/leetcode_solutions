@@ -1,0 +1,50 @@
+package tuf.binarytree;
+
+import java.util.ArrayList;
+import java.util.List;
+
+// https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+// 
+public class _94_Binary_Tree_Inorder_Traversal {
+
+	List<Integer> answer;
+
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+
+		TreeNode() {
+		}
+
+		TreeNode(int val) {
+			this.val = val;
+		}
+
+		TreeNode(int val, TreeNode left, TreeNode right) {
+			this.val = val;
+			this.left = left;
+			this.right = right;
+		}
+	}
+
+	public void inorderHelper(TreeNode root, List<Integer> list) {
+		if (root == null)
+			return;
+		inorderHelper(root.left, list);
+		list.add(root.val);
+		inorderHelper(root.right, list);
+	}
+
+	public List<Integer> inorderTraversal(TreeNode root) {
+		List<Integer> answer = new ArrayList<Integer>();
+		inorderHelper(root, answer);
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
