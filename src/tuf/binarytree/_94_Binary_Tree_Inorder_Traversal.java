@@ -47,4 +47,28 @@ public class _94_Binary_Tree_Inorder_Traversal {
 
 	}
 
+	public List<Integer> inorderMorrisTraversal(TreeNode root) {
+		List<Integer> answer = new ArrayList<Integer>();
+		TreeNode current = root;
+
+		while (current != null) {
+			if (current.left == null) {
+				answer.add(current.val);
+				current = current.right;
+			} else {
+				TreeNode leftChild = current.left;
+				while (leftChild.right != null) {
+					leftChild = leftChild.right;
+				}
+
+				leftChild.right = current;
+				TreeNode temp = current;
+				current = current.left;
+				temp.left = null;
+			}
+		}
+
+		return answer;
+	}
+
 }
