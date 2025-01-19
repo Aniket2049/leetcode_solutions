@@ -18,18 +18,18 @@ public class Bottom_View_of_Binary_Tree {
 
 		Map<Integer, Integer> map = new TreeMap<Integer, Integer>();
 		Queue<Node> q = new LinkedList<Bottom_View_of_Binary_Tree.Node>();
-		root.hd = 0;
+		root.verticalOffset = 0;
 		q.add(root);
 		while (!q.isEmpty()) {
 			Node temp = q.remove();
-			int hd = temp.hd;
+			int hd = temp.verticalOffset;
 			map.put(hd, temp.data);
 			if (temp.left != null) {
-				temp.left.hd = hd - 1;
+				temp.left.verticalOffset = hd - 1;
 				q.add(temp.left);
 			}
 			if (temp.right != null) {
-				temp.right.hd = hd + 1;
+				temp.right.verticalOffset = hd + 1;
 				q.add(temp.right);
 			}
 		}
@@ -67,7 +67,7 @@ public class Bottom_View_of_Binary_Tree {
 		int data;
 		Node left;
 		Node right;
-		int hd;
+		int verticalOffset;
 
 		public Node(int val) {
 			data = val;
