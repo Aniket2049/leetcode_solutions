@@ -2,6 +2,8 @@ package tuf.binarysearchtree;
 
 // https://leetcode.com/problems/validate-binary-search-tree/description/
 // https://www.youtube.com/watch?v=f-sj7I5oXEI
+// https://www.youtube.com/watch?v=PITUkhnuWHQ
+// https://leetcode.com/problems/validate-binary-search-tree/solutions/5622933/video-check-range-of-each-node/?source=submission-noac
 public class _98_Validate_Binary_Search_Tree {
 
 	public boolean isValidBST(TreeNode root) {
