@@ -7,7 +7,7 @@ import java.util.Map;
 
 // https://leetcode.com/problems/top-k-frequent-elements/description/
 // https://www.youtube.com/watch?v=YPTqKIgVk-k
-public class _347_Top_K_Frequent_Elements {
+public class _5_347_TopKFrequentElements {
 
 	public void printArr(int[] ans) {
 
@@ -56,19 +56,19 @@ public class _347_Top_K_Frequent_Elements {
 //		Example 1:
 //		Input: nums = [1,1,1,2,2,3], k = 2
 //		Output: [1,2]
-		new _347_Top_K_Frequent_Elements().topKFrequent(new int[] { 1, 1, 1, 2, 2, 3 }, 2);
+		new _5_347_TopKFrequentElements().topKFrequent(new int[] { 1, 1, 1, 2, 2, 3 }, 2);
 //		Example 2:
 //		Input: nums = [1], k = 1
 //		Output: [1]
-		new _347_Top_K_Frequent_Elements().topKFrequent(new int[] { 1 }, 1);
+		new _5_347_TopKFrequentElements().topKFrequent(new int[] { 1 }, 1);
 //		Example 3:
 //		Input: nums = [1,2], k = 2
 //		Output: []
-		new _347_Top_K_Frequent_Elements().topKFrequent(new int[] { 1, 2 }, 2);
+		new _5_347_TopKFrequentElements().topKFrequent(new int[] { 1, 2 }, 2);
 //		Example 4:
 //		Input: nums = [3,0,1,0], k = 1
 //		Output: [0,1,3]
-		new _347_Top_K_Frequent_Elements().topKFrequent(new int[] { 3, 0, 1, 0 }, 1);
+		new _5_347_TopKFrequentElements().topKFrequent(new int[] { 3, 0, 1, 0 }, 1);
 
 	}
 

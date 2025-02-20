@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 // https://leetcode.com/problems/two-sum/description/
 // https://www.youtube.com/watch?v=KLlXCFG5TnA
-public class _1_Two_Sum {
+public class _3_1_TwoSum {
 
 	public int[] twoSum(int[] nums, int target) {
 		HashMap<Integer, Integer> prevMap = new HashMap<Integer, Integer>();
@@ -29,7 +29,7 @@ public class _1_Two_Sum {
 
 		int[] nums = { 2, 7, 11, 15 };
 		int target = 9;
-		_1_Two_Sum obj = new _1_Two_Sum();
+		_3_1_TwoSum obj = new _3_1_TwoSum();
 		System.out.println(Arrays.toString(obj.twoSum(nums, target)));
 
 	}

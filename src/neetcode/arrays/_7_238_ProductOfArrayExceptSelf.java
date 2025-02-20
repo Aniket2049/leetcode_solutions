@@ -2,7 +2,7 @@ package neetcode.arrays;
 
 // https://leetcode.com/problems/product-of-array-except-self/description/
 // https://www.youtube.com/watch?v=bNvIQI2wAjk
-public class _238_Product_of_Array_Except_Self {
+public class _7_238_ProductOfArrayExceptSelf {
 
 	public int[] productExceptSelf(int[] nums) {
 		int[] arr = new int[nums.length];
@@ -32,11 +32,11 @@ public class _238_Product_of_Array_Except_Self {
 //		Example 1:
 //		Input: nums = [1,2,3,4]
 //		Output: [24,12,8,6]
-		new _238_Product_of_Array_Except_Self().productExceptSelf(new int[] {1,2,3,4});
+		new _7_238_ProductOfArrayExceptSelf().productExceptSelf(new int[] {1,2,3,4});
 //		Example 2:
 //		Input: nums = [-1,1,0,-3,3]
 //		Output: [0,0,9,0,0]
-		new _238_Product_of_Array_Except_Self().productExceptSelf(new int[] {-1,1,0,-3,3});
+		new _7_238_ProductOfArrayExceptSelf().productExceptSelf(new int[] {-1,1,0,-3,3});
 
 	}
 

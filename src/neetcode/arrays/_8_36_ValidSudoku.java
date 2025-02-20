@@ -1,28 +1,55 @@
 package neetcode.arrays;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 // https://leetcode.com/problems/valid-sudoku/description/
 // https://www.youtube.com/watch?v=TjFXEUCMqI8
 // https://www.youtube.com/watch?v=Pl7mMcBm2b8
-public class _36_Valid_Sudoku {
+public class _8_36_ValidSudoku {
 
 	public boolean isValidSudoku2(char[][] board) {
-	    Set seen = new HashSet();
-	    for (int i=0; i<9; ++i) {
-	        for (int j=0; j<9; ++j) {
-	            char number = board[i][j];
-	            if (number != '.')
-	                if (!seen.add(number + " in row " + i) ||
-	                    !seen.add(number + " in column " + j) ||
-	                    !seen.add(number + " in block " + i/3 + "-" + j/3))
-	                    return false;
-	        }
-	    }
-	    return true;
+		Set<String> seen = new HashSet<String>();
+		for (int i = 0; i < 9; ++i) {
+			for (int j = 0; j < 9; ++j) {
+				char number = board[i][j];
+				if (number != '.')
+					if (!seen.add(number + " in row " + i) || !seen.add(number + " in column " + j)
+							|| !seen.add(number + " in block " + i / 3 + "-" + j / 3))
+						return false;
+			}
+		}
+		return true;
 	}
-	
+
+	public boolean isValidSudoku3(char[][] board) {
+		Map<Integer, Set<Character>> cols = new HashMap<>();
+		Map<Integer, Set<Character>> rows = new HashMap<>();
+		Map<String, Set<Character>> squares = new HashMap<>();
+
+		for (int r = 0; r < 9; r++) {
+			for (int c = 0; c < 9; c++) {
+				if (board[r][c] == '.')
+					continue;
+
+				String squareKey = (r / 3) + "," + (c / 3);
+
+				if (rows.computeIfAbsent(r, k -> new HashSet<>()).contains(board[r][c])
+						|| cols.computeIfAbsent(c, k -> new HashSet<>()).contains(board[r][c])
+						|| squares.computeIfAbsent(squareKey, k -> new HashSet<>()).contains(board[r][c])) {
+					return false;
+				}
+
+				rows.get(r).add(board[r][c]);
+				cols.get(c).add(board[r][c]);
+				squares.get(squareKey).add(board[r][c]);
+			}
+		}
+		return true;
+	}
+
 	public boolean isValidSudoku(char[][] board) {
 		// a set of the characters that we have already come across (excluding '.' which
 		// denotes an empty space)
@@ -94,7 +121,7 @@ public class _36_Valid_Sudoku {
 
 		return true;
 	}
-    
+
 	public static void main(String[] args) {
 //		Input: board = 
 //		{{'5','3','.','.','7','.','.','.','.'}
@@ -107,20 +134,14 @@ public class _36_Valid_Sudoku {
 //		,{'.','.','.','4','1','9','.','.','5'}
 //		,{'.','.','.','.','8','.','.','7','9'}}
 //		Output: true
-		
-		char[][] board = new char[][]
-				{{'5','3','.','.','7','.','.','.','.'}
-				,{'6','.','.','1','9','5','.','.','.'}
-				,{'.','9','8','.','.','.','.','6','.'}
-				,{'8','.','.','.','6','.','.','.','3'}
-				,{'4','.','.','8','.','3','.','.','1'}
-				,{'7','.','.','.','2','.','.','.','6'}
-				,{'.','6','.','.','.','.','2','8','.'}
-				,{'.','.','.','4','1','9','.','.','5'}
-				,{'.','.','.','.','8','.','.','7','9'}}; 
-		System.out.println(new _36_Valid_Sudoku().isValidSudoku2(board));
 
-		
+		char[][] board = new char[][] { { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+				{ '6', '.', '.', '1', '9', '5', '.', '.', '.' }, { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+				{ '8', '.', '.', '.', '6', '.', '.', '.', '3' }, { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+				{ '7', '.', '.', '.', '2', '.', '.', '.', '6' }, { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+				{ '.', '.', '.', '4', '1', '9', '.', '.', '5' }, { '.', '.', '.', '.', '8', '.', '.', '7', '9' } };
+		System.out.println(new _8_36_ValidSudoku().isValidSudoku2(board));
+
 //		Example 2:
 //		Input: board = 
 //		[['8','3','.','.','7','.','.','.','.'}
@@ -133,18 +154,13 @@ public class _36_Valid_Sudoku {
 //		,{'.','.','.','4','1','9','.','.','5'}
 //		,{'.','.','.','.','8','.','.','7','9'}}
 //		Output: false
-		
-		board = new char[][]
-				{{'8','3','.','.','7','.','.','.','.'}
-				,{'6','.','.','1','9','5','.','.','.'}
-				,{'.','9','8','.','.','.','.','6','.'}
-				,{'8','.','.','.','6','.','.','.','3'}
-				,{'4','.','.','8','.','3','.','.','1'}
-				,{'7','.','.','.','2','.','.','.','6'}
-				,{'.','6','.','.','.','.','2','8','.'}
-				,{'.','.','.','4','1','9','.','.','5'}
-				,{'.','.','.','.','8','.','.','7','9'}};
-		System.out.println(new _36_Valid_Sudoku().isValidSudoku2(board));
+
+		board = new char[][] { { '8', '3', '.', '.', '7', '.', '.', '.', '.' },
+				{ '6', '.', '.', '1', '9', '5', '.', '.', '.' }, { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+				{ '8', '.', '.', '.', '6', '.', '.', '.', '3' }, { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+				{ '7', '.', '.', '.', '2', '.', '.', '.', '6' }, { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+				{ '.', '.', '.', '4', '1', '9', '.', '.', '5' }, { '.', '.', '.', '.', '8', '.', '.', '7', '9' } };
+		System.out.println(new _8_36_ValidSudoku().isValidSudoku3(board));
 	}
 
 }

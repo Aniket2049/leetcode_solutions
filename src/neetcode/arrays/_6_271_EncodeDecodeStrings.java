@@ -7,7 +7,7 @@ import java.util.List;
 // https://leetcode.com/problems/encode-and-decode-strings/description/
 // https://www.youtube.com/watch?v=B1k_sxOSgv8
 // https://neetcode.io/problems/string-encode-and-decode
-public class _271_Encode_Decode_Strings {
+public class _6_271_EncodeDecodeStrings {
 
 	public String encode(List<String> strs) {
         StringBuilder encodedString = new StringBuilder();
@@ -38,8 +38,8 @@ public class _271_Encode_Decode_Strings {
 
 		List<String> input = Arrays.asList("neet", "code", "love", "you");
 		List<String> output = Arrays.asList("neet", "code", "love", "you");
-		String encoded = new _271_Encode_Decode_Strings().encode(input);
-		List<String> decoded = new _271_Encode_Decode_Strings().decode(encoded);
+		String encoded = new _6_271_EncodeDecodeStrings().encode(input);
+		List<String> decoded = new _6_271_EncodeDecodeStrings().decode(encoded);
 		System.out.println(encoded);
 		System.out.println(Arrays.toString(decoded.toArray()));
 		
@@ -48,8 +48,8 @@ public class _271_Encode_Decode_Strings {
 //		Output: ["we","say",":","yes"]
 		input = Arrays.asList("we","say",":","yes");
 		output = Arrays.asList("we","say",":","yes");
-		encoded = new _271_Encode_Decode_Strings().encode(input);
-		decoded = new _271_Encode_Decode_Strings().decode(encoded);
+		encoded = new _6_271_EncodeDecodeStrings().encode(input);
+		decoded = new _6_271_EncodeDecodeStrings().decode(encoded);
 		System.out.println(encoded);
 		System.out.println(Arrays.toString(decoded.toArray()));
 

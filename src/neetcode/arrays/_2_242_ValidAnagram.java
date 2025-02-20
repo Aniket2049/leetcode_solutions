@@ -1,10 +1,29 @@
 package neetcode.arrays;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
 // https://leetcode.com/problems/valid-anagram/description/
-public class _242_Valid_Anagram {
+// https://www.youtube.com/watch?v=9UtInBqnCgA
+public class _2_242_ValidAnagram {
+
+	public boolean isAnagram2(String s, String t) {
+		char[] sCharArr = s.toCharArray();
+		char[] tCharArr = t.toCharArray();
+
+		if (sCharArr.length != tCharArr.length)
+			return false;
+
+		Arrays.sort(sCharArr);
+		Arrays.sort(tCharArr);
+
+		for (int i = 0; i < sCharArr.length; i++) {
+			if (sCharArr[i] != tCharArr[i])
+				return false;
+		}
+		return true;
+	}
 
 	public boolean isAnagram(String s, String t) {
 		if (s.length() != t.length())
@@ -35,7 +54,6 @@ public class _242_Valid_Anagram {
 		if (firstHashmap.entrySet().size() != secondHashmap.entrySet().size())
 			return false;
 
-		boolean result = true;
 		// check if every character in first hashmap exists in second
 		for (Entry<Character, Integer> entry : firstHashmap.entrySet()) {
 			Character key = entry.getKey();
@@ -70,7 +88,7 @@ public class _242_Valid_Anagram {
 	}
 
 	public static void main(String[] args) {
-		_242_Valid_Anagram obj = new _242_Valid_Anagram();
+		_2_242_ValidAnagram obj = new _2_242_ValidAnagram();
 
 		String s1 = "anagram", t1 = "nagaram";
 		String s2 = "sdfram", t2 = "nagaram";
@@ -79,7 +97,7 @@ public class _242_Valid_Anagram {
 
 //		System.out.println(obj.isAnagram(s1, t1));
 //		System.out.println(obj.isAnagram(s2, t2));
-		System.out.println(obj.isAnagram(s3, t3));
+		System.out.println(obj.isAnagram2(s3, t3));
 
 	}
 
