@@ -1,55 +1,39 @@
 package neetcode.slidingwindow;
 
+import java.util.Arrays;
+
 // https://leetcode.com/problems/permutation-in-string/description/
-// https://www.youtube.com/watch?v=UbyhOgBN834
-// https://neetcode.io/solutions/permutation-in-string
+// https://www.youtube.com/watch?v=quSfR-uwkZU
+// https://github.com/gahogg/Leetcode-Solutions/blob/main/Permutation%20in%20String%20-%20Leetcode%20567/Permutation%20in%20String%20-%20Leetcode%20567.java
 // https://algo.monster/liteproblems/567
 public class _4_567_PermutationInString {
 
 	public boolean checkInclusion(String s1, String s2) {
-		if (s1.length() > s2.length()) {
-            return false;
-        }
+		int n1 = s1.length();
+		int n2 = s2.length();
 
-        int[] s1Count = new int[26];
-        int[] s2Count = new int[26];
-        for (int i = 0; i < s1.length(); i++) {
-            s1Count[s1.charAt(i) - 'a']++;
-            s2Count[s2.charAt(i) - 'a']++;
-        }
+		if (n1 > n2)
+			return false;
 
-        int matches = 0;
-        for (int i = 0; i < 26; i++) {
-            if (s1Count[i] == s2Count[i]) {
-                matches++;
-            }
-        }
+		int[] s1Counts = new int[26];
+		int[] s2Counts = new int[26];
 
-        int l = 0;
-        for (int r = s1.length(); r < s2.length(); r++) {
-            if (matches == 26) {
-                return true;
-            }
+		for (int i = 0; i < n1; i++) {
+			s1Counts[s1.charAt(i) - 'a']++;
+			s2Counts[s2.charAt(i) - 'a']++;
+		}
 
-            int index = s2.charAt(r) - 'a';
-            s2Count[index]++;
-            if (s1Count[index] == s2Count[index]) {
-                matches++;
-            } else if (s1Count[index] + 1 == s2Count[index]) {
-                matches--;
-            }
+		if (Arrays.equals(s1Counts, s2Counts))
+			return true;
 
-            index = s2.charAt(l) - 'a';
-            s2Count[index]--;
-            if (s1Count[index] == s2Count[index]) {
-                matches++;
-            } else if (s1Count[index] - 1 == s2Count[index]) {
-                matches--;
-            }
-            l++;
-        }
-        return matches == 26;
+		for (int i = n1; i < n2; i++) {
+			s2Counts[s2.charAt(i) - 'a']++;
+			s2Counts[s2.charAt(i - n1) - 'a']--;
+			if (Arrays.equals(s1Counts, s2Counts))
+				return true;
+		}
 
+		return false;
 	}
 
 	public static void main(String[] args) {
