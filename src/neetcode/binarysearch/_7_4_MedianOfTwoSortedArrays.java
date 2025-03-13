@@ -31,9 +31,9 @@ public class _7_4_MedianOfTwoSortedArrays {
 
 			if (Aleft <= Bright && Bleft <= Aright) {
 				if (total % 2 != 0) {
-					return Math.max(Aleft, Bleft);
+					return Math.max(Aleft, Bleft);	//total elements are odd
 				}
-				return (Math.max(Aleft, Bleft) + Math.min(Aright, Bright)) / 2.0;
+				return (Math.max(Aleft, Bleft) + Math.min(Aright, Bright)) / 2.0;	//total elements are even
 			} else if (Aleft > Bright) {
 				r = i - 1;
 			} else {
