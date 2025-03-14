@@ -2,6 +2,7 @@ package neetcode.binarytree;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/
 // https://www.youtube.com/watch?v=hTM3phVI6YQ
@@ -62,5 +63,35 @@ public class _2_104_MaximumDepthOfBinaryTree {
 			this.right = right;
 		}
 	}
-
+	
+	// iterative dfs
+	/*public int maxDepthIterativeDFS(TreeNode root) {
+	    Stack<Pair<TreeNode, Integer>> stack = new Stack<>();
+	    stack.push(new Pair<>(root, 1));
+	    int res = 0;
+	
+	    while (!stack.isEmpty()) {
+	        Pair<TreeNode, Integer> current = stack.pop();
+	        TreeNode node = current.getKey();
+	        int depth = current.getValue();
+	
+	        if (node != null) {
+	            res = Math.max(res, depth);
+	            stack.push(new Pair<>(node.left, depth + 1));
+	            stack.push(new Pair<>(node.right, depth + 1));
+	        }
+	    }
+	    return res;
+	}
+	
+	static class Pair {
+		TreeNode root;
+		int num;
+	
+		Pair(TreeNode root, int num) {
+			this.root = root;
+			this.num = num;
+		}
+	}
+	*/
 }
