@@ -40,7 +40,8 @@ public class _7_131_PalindromePartitioning {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		String s = "aab";
+		List<List<String>> data = new _7_131_PalindromePartitioning().partition(s);
 
 	}
 
