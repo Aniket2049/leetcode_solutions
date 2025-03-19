@@ -6,6 +6,7 @@ import java.util.List;
 
 // https://leetcode.com/problems/pacific-atlantic-water-flow/
 // https://www.youtube.com/watch?v=s-VkcjHqkGI
+// https://www.youtube.com/watch?v=pDvvDvgHUKE
 public class _6_417_PacificAtlanticWaterFlow {
 
 	private int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
