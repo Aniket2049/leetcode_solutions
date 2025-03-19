@@ -4,6 +4,7 @@ package neetcode.graph;
 // https://www.youtube.com/watch?v=8f1XPm4WOUc
 // https://algo.monster/liteproblems/323
 // https://leetcode.ca/2016-10-18-323-Number-of-Connected-Components-in-an-Undirected-Graph/
+// https://www.youtube.com/watch?v=Y29g_m96iaI
 public class _11_323_NumberOfConnectedComponentsInAnUndirectedGraph {
 	private int[] parent; // This array will hold the parent for each node representing the components
 
