@@ -13,6 +13,7 @@ import java.util.Set;
 // https://www.youtube.com/watch?v=EaphyqKU4PQ
 public class _1_743_NetworkDelayTime {
 
+	//dijkstra
 	public int networkDelayTime(int[][] times, int n, int k) {
 		Map<Integer, List<int[]>> edges = new HashMap<>();
 		for (int[] time : times) {
