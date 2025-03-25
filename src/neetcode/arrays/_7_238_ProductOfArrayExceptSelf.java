@@ -2,6 +2,7 @@ package neetcode.arrays;
 
 // https://leetcode.com/problems/product-of-array-except-self/description/
 // https://www.youtube.com/watch?v=bNvIQI2wAjk
+// https://www.youtube.com/watch?v=G9zKmhybKBM
 public class _7_238_ProductOfArrayExceptSelf {
 
 	public int[] productExceptSelf(int[] nums) {
