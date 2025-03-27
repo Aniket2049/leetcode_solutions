@@ -3,6 +3,7 @@ package neetcode.dynamic2d;
 // https://leetcode.com/problems/burst-balloons/
 // https://www.youtube.com/watch?v=VFskby7lUbw
 // https://algo.monster/liteproblems/312
+// https://www.youtube.com/watch?v=l5AZpRsgcH4
 public class _10_312_BurstBalloons {
 	public int maxCoinsBottomUp(int[] nums) {
 		int n = nums.length;
