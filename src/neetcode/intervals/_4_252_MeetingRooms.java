@@ -6,6 +6,7 @@ import java.util.List;
 
 // https://leetcode.com/problems/meeting-rooms/
 // https://www.lintcode.com/problem/920/
+// https://www.youtube.com/watch?v=PaJxqZVPhbg
 public class _4_252_MeetingRooms {
 	public boolean canAttendMeetings(List<Interval> intervals) {
 		Collections.sort(intervals, Comparator.comparingInt(i -> i.start));
