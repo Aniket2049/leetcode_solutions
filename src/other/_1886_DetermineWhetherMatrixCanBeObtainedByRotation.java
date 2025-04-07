@@ -3,7 +3,7 @@ package other;
 import java.util.Arrays;
 
 // https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/description/
-public class _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation {
+public class _1886_DetermineWhetherMatrixCanBeObtainedByRotation {
 
 	public int[][] rotate(int[][] matrix) {
 		int n = matrix.length;
@@ -54,7 +54,7 @@ public class _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation {
 		int[][] mat1 = { { 0, 1 }, { 1, 0 } };
 		int[][] target1 = { { 1, 0 }, { 0, 1 } };
 		System.out
-				.println(new _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation().findRotation(mat1, target1));
+				.println(new _1886_DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat1, target1));
 
 //		Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
 //		Output: false
@@ -62,7 +62,7 @@ public class _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation {
 		int[][] mat2 = { { 0, 1 }, { 1, 1 } };
 		int[][] target2 = { { 1, 0 }, { 0, 1 } };
 		System.out
-				.println(new _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation().findRotation(mat2, target2));
+				.println(new _1886_DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat2, target2));
 
 //		Input: mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]
 //		Output: true
@@ -70,7 +70,7 @@ public class _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation {
 		int[][] mat3 = { { 0, 0, 0 }, { 0, 1, 0 }, { 1, 1, 1 } };
 		int[][] target3 = { { 1, 1, 1 }, { 0, 1, 0 }, { 0, 0, 0 } };
 		System.out
-				.println(new _1886_Determine_Whether_Matrix_Can_Be_Obtained_By_Rotation().findRotation(mat3, target3));
+				.println(new _1886_DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(mat3, target3));
 	}
 
 }

@@ -1,7 +1,7 @@
 package other;
 
 // https://leetcode.com/problems/valid-palindrome-ii/description/
-public class _680_Valid_Palindrome_II {
+public class _680_ValidPalindromeII {
 
 	public boolean validPalindrome(String s) {
 		int i = 0;
@@ -33,20 +33,20 @@ public class _680_Valid_Palindrome_II {
 //		Input: s = "aba"
 //		Output: true
 		String s = "aba";
-		System.out.println(new _680_Valid_Palindrome_II().validPalindrome(s));
+		System.out.println(new _680_ValidPalindromeII().validPalindrome(s));
 
 //		Example 2:
 //		Input: s = "abca"
 //		Output: true
 //		Explanation: You could delete the character 'c'.
 		s = "abca";
-		System.out.println(new _680_Valid_Palindrome_II().validPalindrome(s));
+		System.out.println(new _680_ValidPalindromeII().validPalindrome(s));
 
 //		Example 3:
 //		Input: s = "abc"
 //		Output: false
 		s = "abc";
-		System.out.println(new _680_Valid_Palindrome_II().validPalindrome(s));
+		System.out.println(new _680_ValidPalindromeII().validPalindrome(s));
 
 	}
 

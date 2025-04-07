@@ -1,7 +1,7 @@
 package other;
 
 // https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/
-public class _2108_Find_First_Palindromic_String_in_the_Array {
+public class _2108_FindFirstPalindromicStringInTheArray {
 
 	public boolean isPalindrome(String s) {
 		StringBuilder newStr = new StringBuilder();
@@ -28,21 +28,21 @@ public class _2108_Find_First_Palindromic_String_in_the_Array {
 //		Explanation: The first string that is palindromic is "ada".
 //		Note that "racecar" is also palindromic, but it is not the first.
 		String[] words = { "abc", "car", "ada", "racecar", "cool" };
-		System.out.println(new _2108_Find_First_Palindromic_String_in_the_Array().firstPalindrome(words));
+		System.out.println(new _2108_FindFirstPalindromicStringInTheArray().firstPalindrome(words));
 
 //		Example 2:
 //		Input: words = ["notapalindrome","racecar"]
 //		Output: "racecar"
 //		Explanation: The first and only string that is palindromic is "racecar".
 		words = new String[] { "notapalindrome", "racecar" };
-		System.out.println(new _2108_Find_First_Palindromic_String_in_the_Array().firstPalindrome(words));
+		System.out.println(new _2108_FindFirstPalindromicStringInTheArray().firstPalindrome(words));
 
 //		Example 3:
 //		Input: words = ["def","ghi"]
 //		Output: ""
 //		Explanation: There are no palindromic strings, so the empty string is returned.
 		words = new String[] { "def", "ghi" };
-		System.out.println(new _2108_Find_First_Palindromic_String_in_the_Array().firstPalindrome(words));
+		System.out.println(new _2108_FindFirstPalindromicStringInTheArray().firstPalindrome(words));
 
 	}
 
