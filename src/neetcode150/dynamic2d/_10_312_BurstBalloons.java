@@ -1,4 +1,4 @@
-package neetcode105.dynamic2d;
+package neetcode150.dynamic2d;
 
 import java.util.ArrayList;
 import java.util.Arrays;

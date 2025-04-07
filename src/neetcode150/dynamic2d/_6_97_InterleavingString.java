@@ -1,4 +1,4 @@
-package neetcode105.dynamic2d;
+package neetcode150.dynamic2d;
 
 // https://leetcode.com/problems/interleaving-string/
 // https://www.youtube.com/watch?v=CfzP4oXxZTI

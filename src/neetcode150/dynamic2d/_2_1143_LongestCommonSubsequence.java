@@ -1,4 +1,4 @@
-package neetcode105.dynamic2d;
+package neetcode150.dynamic2d;
 
 // https://leetcode.com/problems/longest-common-subsequence
 // https://www.youtube.com/watch?v=e9tUPwZZSBI
