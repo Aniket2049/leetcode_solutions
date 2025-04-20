@@ -4,7 +4,7 @@ import java.util.Stack;
 
 // https://leetcode.com/problems/decode-string/
 // https://www.youtube.com/watch?v=E9qHRcQXmDk
-public class _12_394_DecodeString {
+public class _13_394_DecodeString {
 	public String decodeString(String s) {
 		Stack<Integer> numStack = new Stack<>();
 		Stack<String> stringStack = new Stack<>();
