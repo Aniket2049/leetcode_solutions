@@ -4,6 +4,7 @@ import java.util.Stack;
 
 // https://leetcode.com/problems/simplify-path/
 // https://www.youtube.com/watch?v=qYlHrAKJfyA
+// https://www.youtube.com/watch?v=4e1gVeQ0AEs
 public class _12_71_SimplifyPath {
 	public String simplifyPath(String path) {
 		Stack<String> stack = new Stack<>();
