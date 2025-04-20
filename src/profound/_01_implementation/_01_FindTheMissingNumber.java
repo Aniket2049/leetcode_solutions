@@ -1,4 +1,4 @@
-package profound.a_implementation;
+package profound._01_implementation;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ Examples
 +-------------------------------+
 */
 
-public class _1_FindTheMissingNumber {
+public class _01_FindTheMissingNumber {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
