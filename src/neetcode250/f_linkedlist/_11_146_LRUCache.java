@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 // https://leetcode.com/problems/lru-cache/
 // https://www.youtube.com/watch?v=7ABFKPK2hD4
+// https://www.youtube.com/watch?v=81h8O-0U5oo
 public class _11_146_LRUCache {
 	class LRUCache {
 		class Node {

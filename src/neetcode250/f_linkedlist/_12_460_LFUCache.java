@@ -5,6 +5,7 @@ import java.util.Map;
 
 // https://leetcode.com/problems/lfu-cache/
 // https://www.youtube.com/watch?v=bLEIHn-DgoA
+// https://www.youtube.com/watch?v=-Vch0tHAsOM
 public class _12_460_LFUCache {
 	class LFUCache {
 		class ListNode {
