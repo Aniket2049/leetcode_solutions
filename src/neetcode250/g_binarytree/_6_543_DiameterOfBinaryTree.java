@@ -1,7 +1,7 @@
 package neetcode250.g_binarytree;
 
 // https://leetcode.com/problems/diameter-of-binary-tree/
-// https://www.youtube.com/watch?v=K81C31ytOZE
+// https://www.youtube.com/watch?v=6lJZ_xj1mEo
 public class _6_543_DiameterOfBinaryTree {
 	class TreeNode {
 		int val;
