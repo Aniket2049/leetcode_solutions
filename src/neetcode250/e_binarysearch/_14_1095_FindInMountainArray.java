@@ -3,9 +3,10 @@ package neetcode250.e_binarysearch;
 // https://leetcode.com/problems/find-in-mountain-array/
 // https://www.youtube.com/watch?v=BGgYC-YkGvc
 public class _14_1095_FindInMountainArray {
+	/*
 	public int findInMountainArray(int target, MountainArray mountainArr) {
 		int length = mountainArr.length();
-
+	
 		// Find Peak
 		int l = 1, r = length - 2, peak = 0;
 		while (l <= r) {
@@ -22,7 +23,7 @@ public class _14_1095_FindInMountainArray {
 				break;
 			}
 		}
-
+	
 		// Search left portion
 		l = 0;
 		r = peak - 1;
@@ -37,7 +38,7 @@ public class _14_1095_FindInMountainArray {
 				return m;
 			}
 		}
-
+	
 		// Search right portion
 		l = peak;
 		r = length - 1;
@@ -52,7 +53,8 @@ public class _14_1095_FindInMountainArray {
 				return m;
 			}
 		}
-
+	
 		return -1;
 	}
+	*/
 }
